@@ -7,3 +7,4 @@ output:
     highlight: textmate
     include:
       after_body: footer.html
+    output_dir: "docs"
