@@ -1,6 +1,6 @@
 name: "Some Examples"
 navbar:
-  title: "Plotting Examples"
+  title: "Website Example 1 -- Basic"
 output:
   html_document:
     theme: cosmo
