@@ -1,0 +1,25 @@
+---
+title: ""
+---
+
+```{r load-libraries, include=FALSE}
+library(leaflet)
+library(highcharter)
+library(palmerpenguins)
+library(dplyr)
+```
+
+## Seneca Hall
+
+```{r map-leaflet, echo=FALSE}
+leaflet() |> addTiles() |> setView(-93.65, 42.0285, zoom = 17)
+```
+
+## Palmer Penguins
+
+```{r chart-highcharter, echo=FALSE}
+data(penguins, package = "palmerpenguins")
+hchart(penguins, "scatter", hcaes(x = body_mass_g, y = flipper_length_mm , group = species))
+```
+
+
